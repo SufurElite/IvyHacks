@@ -10,6 +10,11 @@
         <chessboard></chessboard>
       </f7-row>
     </div>
+    <div>
+        Should be here:
+      <dropdown :options="usernames" :selected="object" v-on:updateOption="selectMethod" :placeholder="'Lichess Username'"></dropdown>
+      <h1>You are logged in as {{this.usernames.length}} </h1>
+    </div> 
     <!-- Tabbar for switching views-tabs -->
     <f7-toolbar tabbar labels bottom>
       <f7-link link="#" tab-link-active icon-md="material:games" text="Play"></f7-link>
@@ -26,7 +31,9 @@ import * as firebase from 'firebase';
 import {chessboard} from 'vue-chessboard'
 import 'vue-chessboard/dist/vue-chessboard.css'
 import newboard from "./newboard.vue"
-
+import { db } from '../js/app';
+import { firebaseApp } from '../js/app';
+import dropdown from 'vue-dropdowns'
 import 'firebase/auth';
 export default {
   name: "chessapp",
@@ -38,9 +45,22 @@ export default {
       
       return {
         user: true,
-        email: firebase.auth().currentUser.email, 
+        email: firebase.auth().currentUser.email,
+        usernames: [],
+        object: {
+          name: 'Lichess Username',
+        } 
       };
     },
+  firestore() {
+    return{
+    usernames: db.collection("usernames").where("email", "==", this.email)
+    }
+  },
+  components: {
+            'dropdown': dropdown,
+            'chessboard': chessboard
+  },
   methods: {
       onLogoutClicked() {
         firebase.auth().signOut().catch((error) =>{
@@ -66,7 +86,10 @@ export default {
         } else {
           return 'q'
         }
-      }
+      },
+      selectMethod(payload){
+        this.object.name = payload.username;
+      },
   },
   created() {
     this.fens = ['5rr1/3nqpk1/p3p2p/Pp1pP1pP/2pP1PN1/2P1Q3/2P3P1/R4RK1 b - f3 0 28',

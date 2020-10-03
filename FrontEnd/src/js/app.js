@@ -1,6 +1,9 @@
 // Import Vue
 import Vue from 'vue';
+import { firestorePlugin } from 'vuefire'
 
+import firebase from 'firebase/app';
+import 'firebase/firestore';
 // Import Framework7
 import Framework7 from 'framework7/framework7-lite.esm.bundle.js';
 
@@ -17,9 +20,19 @@ import '../css/app.css';
 // Import App Component
 import App from '../components/app.vue';
 
+
 // Init Framework7-Vue Plugin
 Framework7.use(Framework7Vue);
 
+Vue.use(firestorePlugin)
+
+
+const config = {
+  
+};
+
+export const firebaseApp = firebase.initializeApp(config);
+export const db = firebaseApp.firestore();
 // Init App
 new Vue({
   el: '#app',
@@ -30,3 +43,4 @@ new Vue({
     app: App    
   },
 });
+

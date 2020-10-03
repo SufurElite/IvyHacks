@@ -46,7 +46,9 @@
   import routes from '../js/routes.js';
   import uData from '../js/routes.js';
   import * as firebase from 'firebase';
-  
+  import { db } from '../js/app'
+  //import VueFire from 'vuefire'
+  //import 'firebase/firestore'
   import 'firebase/auth';
 
   export default{
@@ -93,12 +95,7 @@
 
     },
     mounted() {
-      const config = {
-        apiKey: "",
-        authDomain: "",
-      };
-  
-      const firebaseApp = firebase.initializeApp(config);
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       // Fired when user logs in or out
       firebase.auth().onAuthStateChanged((user) => {
         console.log("User auth status has changed!", user);

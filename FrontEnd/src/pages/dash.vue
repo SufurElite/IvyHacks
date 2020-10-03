@@ -7,8 +7,19 @@
     <f7-block-title>About My App</f7-block-title>
     <f7-block strong>
       <f7-block-header> You are logged in as {{this.email}} </f7-block-header>
-      <p>Fugiat perspiciatis excepturi, soluta quod non ullam deleniti. Nobis sint nemo consequuntur, fugiat. Eius perferendis animi autem incidunt vel quod tenetur nostrum, voluptate omnis quasi quidem illum consequuntur, a, quisquam.</p>
-      <p>Laudantium neque magnam vitae nemo quam commodi, in cum dolore obcaecati laborum, excepturi harum, optio qui, consequuntur? Obcaecati dolor sequi nesciunt culpa quia perspiciatis, reiciendis ex debitis, ut tenetur alias.</p>
+    </f7-block>
+    <div>
+        Should be here:
+      <dropdown :options="usernames" :selected="object" v-on:updateOption="selectMethod" :placeholder="'Lichess Username'"></dropdown>
+      <h1>You are logged in as {{this.usernames.length}} </h1>
+    </div> 
+    <f7-block>
+    <form @submit.prevent="addUsername(tmpuser)" action="" method="GET">
+      <f7-list no-hairlines-md>
+        <f7-list-input class="username-input" :value="tmpuser" @input="tmpuser = $event.target.value" type="username" placeholder="Lichess Username" />
+      </f7-list>
+      <f7-button type ="submit"> Add New Username </f7-button>
+    </form>
     </f7-block>
     <f7-block>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni molestiae laudantium dignissimos est nobis delectus nemo ea alias voluptatum architecto, amet similique, saepe iste consectetur in repellat ut minus quibusdam!</p>
@@ -16,6 +27,7 @@
       <p>Blanditiis, cumque quo adipisci. Molestiae, dolores dolorum quos doloremque ipsa ullam eligendi commodi deserunt doloribus inventore magni? Ea mollitia veniam nostrum nihil, iusto doloribus a at! Ea molestiae ullam delectus!</p>
     </f7-block>
     <!-- Tabbar for switching views-tabs -->
+    
     <f7-toolbar tabbar labels bottom>
       <f7-link @click="toPlay" icon-md="material:games" text="Play"></f7-link>
       <f7-link link="#" tab-link-active icon-md="material:code" text="Train"></f7-link>
@@ -25,25 +37,47 @@
 </template>
 <script>
 import routes from '../js/routes.js';
-import * as firebase from 'firebase';
-import VueFire from 'vuefire';
-import 'firebase/firestore'
-
+import firebase from 'firebase';
+import { db } from '../js/app'
 import 'firebase/auth';
+import dropdown from 'vue-dropdowns'
+
 export default {
+  
   data() {
-      
       return {
         user: true,
-        email: firebase.auth().currentUser.email, 
+        email: firebase.auth().currentUser.email,
+        usernames: [],
+        tmpuser: '',
+        object: {
+          name: 'Lichess Username',
+        }
       };
     },
+    firestore () {
+      return {
+        usernames: db.collection("usernames").where("email", "==", this.email)
+      }
+    },
+     components: {
+            'dropdown': dropdown,
+      },
       methods: {
       onLogoutClicked() {
         firebase.auth().signOut().catch((error) =>{
           console.error("Error when trying to logout user", error);
         });  
         this.$f7.views.main.router.navigate('/');
+      },
+      addUsername(tmpusername) {
+        db.collection('usernames').add({ 
+          username: tmpusername,
+          email:this.email,  
+          })
+      },
+      selectMethod(payload){
+        this.object.name = payload.username;
       },
       toPlay(){
         this.$f7.views.main.router.navigate('/play/');
