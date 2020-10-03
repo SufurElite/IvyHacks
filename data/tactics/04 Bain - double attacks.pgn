@@ -1,0 +1,414 @@
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "01"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "8/p5n1/1r3k2/1p1B1p2/5Rp1/1P6/PK3PP1/8 b - - 0 1"]
+
+1. ... Ke5 2. g3 
+    ( 2. Ba8 Kxf4 )
+2. ... Kxd5 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "02"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "3k4/8/8/2n1b3/8/4P3/3P4/3K4 w - - 0 1"]
+
+1. d4 Nd7 
+    ( 1. ... Bxd4 2. exd4 )
+2. dxe5 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "03"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "8/n2k3p/5rp1/5p2/7P/5NP1/5PK1/1R6 w - - 0 1"]
+
+1. Rb7+ Kc6 2. Rxa7 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "04"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "6k1/p1pp1ppp/1b6/p3n3/2P5/2NPP3/P4PPP/B5K1 w - - 0 1"]
+
+1. c5 Bxc5 2. d4 Bxd4 
+    ( 2. ... Ng6 3. dxc5 )
+3. exd4 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "05"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "8/4QK2/n7/1k5r/8/8/8/8 w - - 0 1"]
+
+1. Qe2+ Kb4 2. Qxh5 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "06"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "6k1/1q3pp1/p6p/n1p5/p6P/2P2NP1/P4PK1/3Q4 w - - 0 1"]
+
+1. Qd8+ Kh7 2. Qxa5 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "07"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "6k1/6p1/4p1n1/1p4r1/2pQP2p/5B1P/1P2KPPq/R7 w - - 0 1"]
+
+1. Qd8+ Kh7 2. Qxg5 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "08"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "3q4/5ppk/2b4p/1p2p3/1P6/P3B2P/4QPP1/6K1 w - - 0 1"]
+
+1. Qc2+ Kg8 
+    ( 1. ... Be4 2. Qxe4+ )
+2. Qxc6 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "09"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "3q4/7k/2b2ppp/1p2p3/1P6/P6P/4QPP1/1B4K1 w - - 0 1"]
+
+1. Bxg6+ Kxg6 2. Qc2+ Kg7 3. Qxc6 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "10"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "8/r4ppk/4p2p/8/p5R1/Pq3N1P/1P1Q1PP1/6K1 w - - 0 1"]
+
+1. Rxg7+ Kxg7 2. Qd4+ Kf8 3. Qxa7 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "11"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "7"]
+[FEN "2r1k1r1/8/1b2p1p1/5p2/7P/6P1/n4PK1/4Q3 w - - 0 1"]
+
+1. Qxe6+ Kf8 
+    ( 1. ... Kd8 2. Qxg8+ Kc7 3. Qxa2 )
+2. Qxc8+ Kg7 3. Qb7+ Kh6 4. Qxb6 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "12"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "1N4k1/4r3/8/8/8/8/1P4K1/8 b - - 0 1"]
+
+1. ... Re2+ 
+    ( 1. ... Rb7 2. Nc6 Rxb2+ )
+2. Kf3 Rxb2 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "13"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "r4k2/pp5p/6p1/5p2/8/8/PPPR2PP/2K5 w - - 0 1"]
+
+1. Rd7 Kg8 
+    ( 1. ... b6 2. Rxh7 )
+    ( 1. ... Rb8 2. Rxh7 )
+2. Rxb7 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "14"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "3r2k1/2r2p1p/8/R7/6pP/6P1/5P2/4R1K1 w - - 0 1"]
+
+1. Rg5+ Kf8 2. Rxg4 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "15"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "3r2k1/2r2p1p/5n2/R3N3/6pP/6P1/5P2/4R1K1 w - - 0 1"]
+
+1. Nxg4 Nxg4 2. Rg5+ Kf8 3. Rxg4 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "16"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "8/pp2k1pp/8/2Nb1p2/1b6/1P6/P5PP/2R4K w - - 0 1"]
+
+1. Nxb7 Bxb7 2. Rc7+ Kd6 3. Rxb7 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "17"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "r4n1r/pn4kp/4p1p1/3p4/3P4/1N4P1/P3RPBP/R5K1 w - - 0 1"]
+
+1. Bxd5 exd5 2. Re7+ Kf6 3. Rxb7 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "18"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "6k1/2p5/8/8/8/6n1/1B6/K7 w - - 0 1"]
+
+1. Be5 c6 
+    ( 1. ... Ne4 2. Bxc7 )
+2. Bxg3 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "19"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "4k3/1B3pp1/2p1pb2/R7/4n3/5NP1/5PKP/1r6 w - - 0 1"]
+
+1. Bxc6+ Ke7 2. Bxe4 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "20"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "6k1/8/4p2r/4P3/2B5/4R2b/5K2/8 w - - 0 1"]
+
+1. Rxh3 Rxh3 2. Bxe6+ *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "21"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "6k1/R4pp1/1p5p/4p3/6b1/1P1r2P1/P4PBP/6K1 w - - 0 1"]
+
+1. Ra8+ Kh7 2. Be4+ g6 3. Bxd3 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "22"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "7"]
+[FEN "3r2k1/R4pp1/1p5p/4p3/6b1/1P1n2P1/P4PBP/4N1K1 w - - 0 1"]
+
+1. Nxd3 Rxd3 2. Ra8+ Kh7 3. Be4+ g6 4. Bxd3 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "23"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "2k1n3/1pb2p2/p1p4p/8/2P2P1P/2N2RB1/PPP3r1/2K5 b - - 0 1"]
+
+1. ... Rxg3 2. Rxg3 Bxf4+ 3. Kd1 Bxg3 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "24"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "1r6/q2n2kp/p3b1p1/1p2p3/8/P1B4P/1PR2PP1/2Q3K1 w - - 0 1"]
+
+1. Bxe5+ Kf7 
+    ( 1. ... Nxe5 2. Rc7+ Kf6 3. Rxa7 )
+2. Bxb8 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "25"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "rnbqk2r/ppp2ppp/3bpn2/3p4/3PP3/2NB4/PPP2PPP/R1BQK1NR w KQkq - 0 1"]
+
+1. e5 Be7 
+    ( 1. ... Bxe5 2. dxe5 )
+2. exf6 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "26"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "1r1q1rk1/pp1bbp1p/1np3p1/8/3N4/1N1Q2PP/PP2PPBK/R4R2 b - - 0 1"]
+
+1. ... c5 2. Nf3 c4 3. Qc3 cxb3 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "27"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "r2q1rk1/pppb1ppp/2p2n2/4b3/4P3/1BP4P/PP1N1PP1/R1BQ1R1K w - - 0 1"]
+
+1. f4 Bd6 2. e5 Ne8 
+    ( 2. ... Be7 3. exf6 )
+3. exd6 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "28"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "8/7k/6pp/3p1p2/3PbPPQ/2p3KP/2P2B2/1rb5 b - - 0 1"]
+
+1. ... Bxf4+ 2. Kxf4 g5+ 3. Kg3 gxh4+ *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "29"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "1k6/p5B1/8/8/8/2K5/8/1bn5 w - - 0 1"]
+
+1. Kb2 Nd3+ 
+    ( 1. ... Be4 2. Kxc1 )
+2. Kxb1 *
+
+[Event "Double Attacks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "30"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "1k6/1p6/8/8/2r5/6P1/n1K2PBR/8 w - - 0 1"]
+
+1. Kb3 Rc3+ 2. Kxa2 *

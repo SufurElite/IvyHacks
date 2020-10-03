@@ -1,0 +1,421 @@
+﻿[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "01"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "8/2k4q/8/8/2B5/8/8/K1R5 w - - 0 1"]
+
+1. Bd3+ 
+    ( 1. Bg8+ Qc2 2. Rxc2+ )
+1. ... Kd6 2. Bxh7 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "02"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "rnb1k2r/1pp2pp1/p1q4p/8/8/2N5/PPP1BPPP/R2QR1K1 w kq - 0 1"]
+
+1. Bb5+ Kf8 
+    ( 1. ... Be6 2. Bxc6+ )
+2. Bxc6 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "03"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "r4rk1/pbp3pp/8/Pp2p3/2N1P1n1/1B6/1PP2PPP/R3R1K1 w - - 0 1"]
+
+1. Nxe5+ Kh8 2. Nxg4 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "04"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "4R3/6rk/3p2r1/p2q3p/P2B4/2P4P/1P1Q2P1/6K1 w - - 0 1"]
+
+1. Rh8+ Kxh8 2. Bxg7+ Rxg7 
+    ( 2. ... Kxg7 3. Qxd5 )
+3. Qxd5 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "05"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "1"]
+[FEN "1R1B2k1/5p1p/6p1/2n5/P7/r6P/5PP1/6K1 w - - 0 1"]
+
+1. Bf6# *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "06"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "1"]
+[FEN "r5r1/p1q2p1k/1p1R2pB/3p1b2/7Q/2p5/P1P1NPPP/6K1 w - - 0 1"]
+
+1. Bf8# *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "07"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "1"]
+[FEN "8/p4pp1/n1R4k/P6p/2N5/6B1/5PPP/rb4K1 b - - 0 1"]
+
+1. ... Bg6# *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "08"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "6k1/p2R1p1p/8/2Pp3r/1P1b4/P3p3/2B3PP/6K1 b - - 0 1"]
+
+1. ... e2+ 2. Kh1 e1=Q# *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "09"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "r4r1k/pp2n2p/4q3/5pp1/3P4/PP1Q3P/1B5K/5R2 w - - 0 1"]
+
+1. d5+ Qf6 
+    ( 1. ... Kg8 2. dxe6 )
+2. Bxf6+ *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "10"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "2k4r/1p1r1ppp/pq2p3/2p5/Q1PP4/8/PP3PPP/2KRR3 w - - 0 1"]
+
+1. Qxd7+ Kxd7 2. dxc5+ Kc6 
+    ( 2. ... Qd6 3. cxd6 )
+3. cxb6 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "11"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "1kr4r/pb3p1p/2qP2p1/nppnQ3/8/2PP4/P2N1BPP/1KR2B1R w - - 0 1"]
+
+1. d7+ Ka8 
+    ( 1. ... Rc7 2. Qxh8+ )
+2. dxc8=Q+ *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "12"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "2q2r2/R1P4k/6pp/1pQ5/1P3P2/8/6PP/6K1 w - - 0 1"]
+
+1. Qxf8 Qxf8 2. c8=Q+ Kg8 3. Qxf8+ *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "13"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "8/2k2r2/5b2/8/1KN5/8/2R5/8 w - - 0 1"]
+
+1. Ne5+ Kd6 2. Nxf7+ *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "14"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "rnbqkb1r/pppp1ppp/5n2/4N3/8/8/PPPPQPPP/RNB1KBNR w KQkq - 0 1"]
+
+1. Nc6+ Be7 
+    ( 1. ... Qe7 2. Nxe7 )
+2. Nxd8 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "15"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "r1b3nr/ppp1kppp/q7/8/3pN3/8/PPP2PPP/R2QR1K1 w - - 0 1"]
+
+1. Nc5+ Qe6 
+    ( 1. ... Be6 2. Nxa6 )
+2. Nxe6 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "16"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "5n2/ppp2pk1/5Npp/8/2P5/1P4P1/P2q1PKP/B7 w - - 0 1"]
+
+1. Ne4+ Kh7 
+    ( 1. ... Qd4 2. Bxd4+ )
+2. Nxd2 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "17"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "1k6/1rp4p/4P3/6pb/4Q3/q6P/PN6/KR6 w - - 0 1"]
+
+1. Qxb7+ Kxb7 2. Nc4+ Kc8 
+    ( 2. ... Qb4 3. Rxb4+ )
+3. Nxa3 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "18"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "r7/2b1qr1k/2p2pRn/p1Pppp2/Pp1P1N1P/5P2/PBBQ4/2K3R1 w - - 0 1"]
+
+1. Rxh6+ Kxh6 2. Nxd5+ f4 3. Nxe7 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "19"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "r1k1qbnr/pNpb1ppp/B1n1p3/3Q4/8/8/PPPP1PPP/R1B1K1NR w KQ - 0 1"]
+
+1. Na5+ Kb8 
+    ( 1. ... Kd8 2. Nxc6# )
+2. Qb5# *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "20"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "r1r3k1/5Npp/1p2Qn2/q4p2/4p3/4P1P1/PP3P2/K7 w - - 0 1"]
+
+1. Nh6+ Kh8 
+    ( 1. ... Kf8 2. Qf7# )
+2. Qg8+ Rxg8 3. Nf7# *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "21"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "2r1k1r1/ppp4p/2n3p1/2qpBp2/8/8/PPP1QPPP/3R1RK1 w - - 0 1"]
+
+1. Bd6+ Kd7 
+    ( 1. ... Ne7 2. Qxe7# )
+2. Bxc5 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "22"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "rn3rk1/2q3pp/2p5/p2Ppb2/8/1Q4P1/PPPB3P/R4KNR b - - 0 1"]
+
+1. ... Bxc2+ 2. Qf3 
+    ( 2. Ke1 Bxb3 )
+2. ... Rxf3+ *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "23"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "8/2R2Bk1/p1nr3p/1p2p2K/4P2P/1P2P3/8/8 w - - 0 1"]
+
+1. Be8+ Kf8 
+    ( 1. ... Ne7 2. Rxe7+ )
+2. Bxc6 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "24"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "8/2R2Bk1/p2r3p/np2p2K/4P2P/1P2P3/8/8 w - - 0 1"]
+
+1. b4 Nc6 
+    ( 1. ... Nc4 2. Bxc4+ )
+2. Be8+ Kf8 3. Bxc6 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "25"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "4r3/pb4k1/1p3Rp1/3p4/3B4/2P5/P2K2PP/8 w - - 0 1"]
+
+1. Rxb6+ Kh6 2. Rxb7 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "26"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "3"]
+[FEN "6k1/p4R1p/1p6/3Q4/2Pb4/8/P6P/2q4K w - - 0 1"]
+
+1. Rf1+ Kh8 2. Rxc1 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "27"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "1k3r2/1pp5/pb2Q2P/4R3/1P6/P5BP/5P1K/5q2 w - - 0 1"]
+
+1. Qxb6 cxb6 2. Re1+ Ka7 3. Rxf1 *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "28"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "5"]
+[FEN "3r1rk1/5ppp/1p6/p1pn4/8/1P6/PBP2P1P/1KR3R1 w - - 0 1"]
+
+1. Rxg7+ Kh8 2. Rg8+ Kxg8 3. Rg1# *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "29"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "7"]
+[FEN "r6k/bb4R1/4N3/4B3/8/6K1/8/8 w - - 0 1"]
+
+1. Rxb7+ Kg8 2. Rg7+ Kh8 3. Rxa7+ Kg8 4. Rxa8+ *
+
+[Event "Discovered Checks"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "30"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[PlyCount "7"]
+[FEN "5r1k/5p1p/5Rp1/8/8/ppB4P/rP3PP1/6K1 w - - 0 1"]
+
+1. Rxf7+ Kg8 2. Rg7+ Kh8 3. Rxg6+ Rf6 4. Bxf6# *

@@ -27,6 +27,6 @@ new Vue({
 
   // Register App Component
   components: {
-    app: App
+    app: App    
   },
 });

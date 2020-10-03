@@ -2,10 +2,7 @@
   <f7-page name="home">
   <!-- Top Navbar -->
     <f7-navbar :sliding="false" large>
-      <f7-nav-left>
-        <f7-link icon-ios="f7:menu" icon-aurora="f7:menu" icon-md="material:menu" panel-open="left"></f7-link>
-      </f7-nav-left>
-      <f7-nav-title-large sliding style="width: 100%;">Copy Chess</f7-nav-title-large>
+      <f7-nav-title-large sliding style="text-align:center; width: 100%;">Copy Chess</f7-nav-title-large>
     </f7-navbar>
 
   <!-- Page content-->
@@ -46,10 +43,14 @@
 </template>
 
 <script> 
+  import routes from '../js/routes.js';
+  import uData from '../js/routes.js';
   import * as firebase from 'firebase';
+  
   import 'firebase/auth';
 
   export default{
+
     data() {
       
       return {
@@ -62,9 +63,15 @@
       };
     },
     methods: {
+      goBack() {
+        this.$f7.loginScreen.close();
+      },
       onLoginWithEmailClicked() {
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then((res) => {
         this.user = firebase.auth().currentUser.user;
+        //uData.email = this.user.email;
+        //alert(uData.email);
+        this.$f7.views.main.router.navigate('/home/');
       }).catch((error) => {
         console.error('Failed to login user', error);
         this.$7.dialog.alert(error.message + ' Please try again.');
@@ -76,6 +83,7 @@
           console.error("Failed to create user", error);
           this.$f7.dialog.alert(error.message + '. Please try again.', '');
         });
+
       },
       onLogoutClicked() {
         firebase.auth().signOut().catch((error) =>{
@@ -86,16 +94,17 @@
     },
     mounted() {
       const config = {
-        
+        apiKey: "",
+        authDomain: "",
       };
-
+  
       const firebaseApp = firebase.initializeApp(config);
       // Fired when user logs in or out
       firebase.auth().onAuthStateChanged((user) => {
         console.log("User auth status has changed!", user);
         this.user = user;
         if(user!=null){
-        this.$f7.views.main.router.navigate('/home/');
+          //this.router.push()
         }
       });
     },
