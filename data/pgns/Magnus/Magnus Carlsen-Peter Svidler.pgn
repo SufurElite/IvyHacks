@@ -1,0 +1,18 @@
+[Event "Champions Showdown Chess 9LX"]
+[Site "lichess.org INT"]
+[Date "2020.09.13"]
+[Round "7.3"]
+[White "Magnus Carlsen"]
+[Black "Peter Svidler"]
+[Result "1-0"]
+[BlackElo "2723"]
+[ECO "000"]
+[EventDate "2020.09.11"]
+[FEN "rnbnqkrb/pppppppp/8/8/8/8/PPPPPPPP/RNBNQKRB w GAga - 0 1"]
+[PlyCount "62"]
+[SetUp "1"]
+[Source "TWIC"]
+[WhiteElo "2863"]
+
+1. d4 d5 2. Nbc3 c6 3. e4 b6 1-0
+

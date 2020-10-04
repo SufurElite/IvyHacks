@@ -14,29 +14,22 @@ import numpy as np
 def create_baseline():
     # create model
     model = Sequential()
-    model.add(Dense(120, input_dim=773, activation='relu'))
-    model.add(Dense(60, activation='relu'))
+    model.add(Dense(200, input_dim=1023, activation='relu'))
+    model.add(Dense(120, activation='relu'))
     model.add(Dense(1, activation='sigmoid'))
     # Compile model
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
     return model
 
-def getData(preferred_file, rejected_file):
-    prefer_data = np.load(preferred_file)['arr_0']
-    reject_data = np.load(rejected_file)['arr_0']
-    #print(prefer_data[0])
-    #input(prefer_data.shape)
-    return prefer_data, reject_data
+def getData(position_file, target_file):
+    X = np.load(position_file)
+    y = np.load(target_file)
+    
+    #input(X.shape)
+    return X, y
 
-def train(prefer_data, reject_data): 
-    X = []
-    y = []
-    for i in prefer_data:
-        X.append(i)
-        y.append(1)
-    for i in reject_data:
-        X.append(i)
-        y.append(0)
+def train(X, y): 
+    
     
     """
     encoder = LabelEncoder()
@@ -50,14 +43,14 @@ def train(prefer_data, reject_data):
     
     """
     model = Sequential()
-    model.add(Dense(120, input_dim=773, activation='relu'))
-    model.add(Dense(60, activation='relu'))
+    model.add(Dense(200, input_dim=1023, activation='relu'))
+    model.add(Dense(120, activation='relu'))
     model.add(Dense(1, activation='sigmoid'))
     X = [X]
     # Compile model
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
     print("Started Training")
-    model.fit(X, y, epochs=50, batch_size=32)
+    model.fit(X, y, epochs=100, batch_size=32)
     _, accuracy = model.evaluate(X, y)
     print('Accuracy: %.2f' % (accuracy*100))
     model_json = model.to_json()
@@ -91,5 +84,5 @@ def loadModel():
     
 
 if __name__=="__main__":
-    prefer_data, reject_data = getData("prefer_data.npz","reject_data.npz")
-    train(prefer_data, reject_data)
+    X, y = getData("CnnFeaturePositions.npy","CnnFeatureTarget.npy")
+    train(X, y)

@@ -1,0 +1,19 @@
+[Event "Champions Showdown Chess 9LX"]
+[Site "lichess.org INT"]
+[Date "2020.09.12"]
+[Round "6.3"]
+[White "Alireza Firouzja"]
+[Black "Magnus Carlsen"]
+[Result "0-1"]
+[BlackElo "2863"]
+[ECO "000"]
+[EventDate "2020.09.11"]
+[FEN "rnkbbrnq/pppppppp/8/8/8/8/PPPPPPPP/RNKBBRNQ w FAfa - 0 1"]
+[PlyCount "66"]
+[SetUp "1"]
+[Source "TWIC"]
+[WhiteElo "2728"]
+
+1. e4 Nc6 2. f4 f5 3. exf5 Rxf5 4. g4 Rf8 5. Nc3 h5 6. g5 e6 7. Nge2 Nge7 8.
+Bf2 h4 9. a3 Nf5 10. Ne4 Be7 11. N2c3 b6 12. d3 d5 13. Nd2 Bd6 14. Bg1 0-1
+

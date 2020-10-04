@@ -13,15 +13,13 @@
     </div>
     <div>
       <form>
+      <div><dropdown :options="usernames" :selected="object" v-on:updateOption="selectMethod" :placeholder="'Trained Model'"></dropdown></div>
       <f7-list>
-      <dropdown :options="usernames" :selected="object" v-on:updateOption="selectMethod" :placeholder="'Trained Model'"></dropdown>
       <f7-list-item checkbox value="white" checked title="Play As White" @change="isChecked"></f7-list-item>
       <f7-button @click="startGame"> Begin Game </f7-button>
       </f7-list>
       </form>
     </div>
-    <f7-block>
-    </f7-block> 
     <!-- Tabbar for switching views-tabs -->
     <f7-toolbar tabbar labels bottom>
       <f7-link link="#" tab-link-active icon-md="material:games" text="Play"></f7-link>

@@ -13,6 +13,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import StratifiedKFold
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
+from data import process_game
 import numpy as np
 
 def loadModel(user="magnus"):
@@ -25,9 +26,9 @@ def loadModel(user="magnus"):
 	loaded_model.load_weights("modelfiles/"+user+".h5")
 	loaded_model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 	return loaded_model
-
+"""     
 def _bitboard(board):
-        """
+   """     """
         Converts the chess.Board representation of the position
         to a binary bit-string representation called bitboard.
         There are two sides (White and Black), 6 piece types
@@ -40,7 +41,7 @@ def _bitboard(board):
         and Black can castle queenside).
         @param board: position of the chess board
         @type board: chess.Board
-        """
+   
         # binary bit-string
         bitboard = np.zeros(773, dtype=bool)
 
@@ -63,15 +64,19 @@ def _bitboard(board):
         bitboard[772] = int(board.has_queenside_castling_rights(chess.BLACK))
 
         return bitboard
+"""
+def boardToData(board):
+	pass
+
 
 def netPredict(model, first, second):
 	
-    x_1 = _bitboard(first)
-    x_2 = _bitboard(second)
+    x_1 = process_game(first)
+    x_2 = process_game(second)
 
     res1 = model.predict([[x_1]])
     res2 = model.predict([[x_2]])
-    
+
     if res1[0] > res2[0]:
         return(first, second)
     else:

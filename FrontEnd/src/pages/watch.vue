@@ -22,9 +22,7 @@
       </form>
     </div>  
     <f7-block>
-      <f7-block-header> You are logged in as {{this.email}} </f7-block-header>
-      <p>Fugiat perspiciatis excepturi, soluta quod non ullam deleniti. Nobis sint nemo consequuntur, fugiat. Eius perferendis animi autem incidunt vel quod tenetur nostrum, voluptate omnis quasi quidem illum consequuntur, a, quisquam.</p>
-      <p>Laudantium neque magnam vitae nemo quam commodi, in cum dolore obcaecati laborum, excepturi harum, optio qui, consequuntur? Obcaecati dolor sequi nesciunt culpa quia perspiciatis, reiciendis ex debitis, ut tenetur alias.</p>
+      <p>Here you can watch the simulation of any two players (or their playstyle) play against each other. Notes, Player 1 will have the White pieces and Player 2 will have the black pieces.</p>
     </f7-block>
     <!-- Tabbar for switching views-tabs -->
     <f7-toolbar tabbar labels bottom>

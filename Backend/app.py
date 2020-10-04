@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import numpy as np
 import keras.models
 import re, sys, os 
-from game import computerMove, loadModel, _bitboard
+from game import computerMove, loadModel
 import chess 
 sys.path.append(os.path.abspath('./modelfiles'))
 from load import *

@@ -1,0 +1,18 @@
+[Event "Champions Showdown Chess 9LX"]
+[Site "lichess.org INT"]
+[Date "2020.09.11"]
+[Round "1.5"]
+[White "Maxime Vachier-Lagrave"]
+[Black "Magnus Carlsen"]
+[Result "0-1"]
+[BlackElo "2863"]
+[ECO "000"]
+[EventDate "2020.09.11"]
+[FEN "nnbrkqrb/pppppppp/8/8/8/8/PPPPPPPP/NNBRKQRB w GDgd - 0 1"]
+[PlyCount "132"]
+[SetUp "1"]
+[Source "TWIC"]
+[WhiteElo "2778"]
+
+1. e4 c5 2. Nb3 b6 3. Qe2 g6 0-1
+

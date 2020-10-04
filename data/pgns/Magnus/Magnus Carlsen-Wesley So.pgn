@@ -1,0 +1,18 @@
+[Event "Champions Showdown Chess 9LX"]
+[Site "lichess.org INT"]
+[Date "2020.09.12"]
+[Round "5.4"]
+[White "Magnus Carlsen"]
+[Black "Wesley So"]
+[Result "0-1"]
+[BlackElo "2770"]
+[ECO "000"]
+[EventDate "2020.09.11"]
+[FEN "nnrkrqbb/pppppppp/8/8/8/8/PPPPPPPP/NNRKRQBB w ECec - 0 1"]
+[PlyCount "57"]
+[SetUp "1"]
+[Source "TWIC"]
+[WhiteElo "2863"]
+
+1. g3 Nc6 2. c4 f5 3. d3 g6 4. Nc3 e5 5. Bxc6 dxc6 6. e4 0-1
+

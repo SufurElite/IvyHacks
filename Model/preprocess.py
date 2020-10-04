@@ -100,7 +100,7 @@ class PGNData():
                 moves_copy = iter(game.mainline_moves())
                 
                 # ignore the first 5 moves
-                non_capture_moves = []
+                all_moves = []
                 
                 ply = int(game.headers['PlyCount'])
                 
@@ -109,16 +109,16 @@ class PGNData():
                 try:
                     for move in range(ply):
                         next_move = next(moves_copy)
-                        if not(board_copy.is_capture(next_move)) and board_copy.turn==isWhite:
-                            non_capture_moves.append(move)
+                        if board_copy.turn==isWhite:
+                            all_moves.append(move)
                         board_copy.push(next_move)
                 except Exception as e:
                     print(e)
                     game = chess.pgn.read_game(self.pgn_chess_games)
                     continue
                 # choose 10 random non-capture moves
-                if len(non_capture_moves)<20: random_moves = np.random.choice(non_capture_moves, len(non_capture_moves), replace=False)
-                else: random_moves = np.random.choice(non_capture_moves, 20, replace=False)
+                if len(all_moves)<30: random_moves = np.random.choice(all_moves, len(all_moves), replace=False)
+                else: random_moves = np.random.choice(all_moves, 30, replace=False)
                 
 
                 # extract bitboard representations of the positions

@@ -3,8 +3,7 @@
     <f7-navbar back-link="Back"></f7-navbar>
     <f7-block-title>Add More Users</f7-block-title>
     <f7-block strong>
-      <p>Fugiat perspiciatis excepturi, soluta quod non ullam deleniti. Nobis sint nemo consequuntur, fugiat. Eius perferendis animi autem incidunt vel quod tenetur nostrum, voluptate omnis quasi quidem illum consequuntur, a, quisquam.</p>
-      <p>Laudantium neque magnam vitae nemo quam commodi, in cum dolore obcaecati laborum, excepturi harum, optio qui, consequuntur? Obcaecati dolor sequi nesciunt culpa quia perspiciatis, reiciendis ex debitis, ut tenetur alias.</p>
+      <p>Below is listed the current models that are either in the training queue or ready to be used. To begin training another player just input their Lichess Username</p>
     </f7-block>
     <div>
     <form @submit.prevent="addUsername(tmpuser)" action="" method="GET">
