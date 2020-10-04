@@ -27,7 +27,7 @@ def getGames(username, numberOfGames):
 
     return pgns
 
-getGames("Behr",100000)
+#getGames("Behr",100000)
 games = load_games()
 
 #print(games[0])

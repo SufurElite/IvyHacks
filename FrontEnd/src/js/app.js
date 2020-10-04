@@ -37,10 +37,21 @@ export const db = firebaseApp.firestore();
 new Vue({
   el: '#app',
   render: (h) => h(App),
-
+  data(){
+    return {
+      email: '',
+      fen: 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1',
+      color: '',
+      bot: '',
+      bot2: '',
+      computerColor: 'black',
+      humanColor: 'white',
+      gameStarted: false
+    }
+  },
   // Register App Component
   components: {
     app: App    
-  },
+  }
 });
 

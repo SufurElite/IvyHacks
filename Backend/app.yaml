@@ -1,0 +1,11 @@
+runtime: python37
+
+handlers:
+- url: /css
+  static_dir: ../FrontEnd/src/css
+
+- url: /img
+  static_dir: ../FrontEnd/src/img
+  
+- url: /js
+  static_dir: ../FrontEnd/src/js

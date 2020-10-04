@@ -73,6 +73,7 @@
         this.user = firebase.auth().currentUser.user;
         //uData.email = this.user.email;
         //alert(uData.email);
+        this.$root.email = this.email;
         this.$f7.views.main.router.navigate('/home/');
       }).catch((error) => {
         console.error('Failed to login user', error);

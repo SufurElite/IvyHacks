@@ -1,20 +1,27 @@
 <template>
   <f7-page name="about">
     <f7-navbar :sliding="false" large>
-      <f7-button v-on:click="onLogoutClicked" style="text-align:left"> Logout </f7-button>
+      <f7-button v-on:click="onLogoutClicked" style="text-align:left; width:100%"> Logout </f7-button>
+      <h4 style="text-align:right; width: 100%;">{{this.email}}</h4>
       <f7-nav-title-large sliding style="text-align:center; width: 100%;">Copy Chess</f7-nav-title-large>
     </f7-navbar>
     
     <div id="chessapp" style="display: flex;align-items: center;justify-content: center;">
       <f7-row>
-        <chessboard></chessboard>
+        <newboard :orientation= "color" :gameStarted="gameStarted"/>
       </f7-row>
     </div>
     <div>
-        Should be here:
-      <dropdown :options="usernames" :selected="object" v-on:updateOption="selectMethod" :placeholder="'Lichess Username'"></dropdown>
-      <h1>You are logged in as {{this.usernames.length}} </h1>
-    </div> 
+      <form>
+      <f7-list>
+      <dropdown :options="usernames" :selected="object" v-on:updateOption="selectMethod" :placeholder="'Trained Model'"></dropdown>
+      <f7-list-item checkbox value="white" checked title="Play As White" @change="isChecked"></f7-list-item>
+      <f7-button @click="startGame"> Begin Game </f7-button>
+      </f7-list>
+      </form>
+    </div>
+    <f7-block>
+    </f7-block> 
     <!-- Tabbar for switching views-tabs -->
     <f7-toolbar tabbar labels bottom>
       <f7-link link="#" tab-link-active icon-md="material:games" text="Play"></f7-link>
@@ -30,25 +37,27 @@ import routes from '../js/routes.js';
 import * as firebase from 'firebase';
 import {chessboard} from 'vue-chessboard'
 import 'vue-chessboard/dist/vue-chessboard.css'
-import newboard from "./newboard.vue"
+import compete from "./compete.vue"
 import { db } from '../js/app';
 import { firebaseApp } from '../js/app';
 import dropdown from 'vue-dropdowns'
+import axios from 'axios'
+import {userPlay} from './compete.vue'
 import 'firebase/auth';
+
 export default {
   name: "chessapp",
-  components: {
-    chessboard,
-    newboard,
-  },
   data() {
       
       return {
         user: true,
+        gameStarted: false,
         email: firebase.auth().currentUser.email,
         usernames: [],
+        fen: '',
+        color: "white",
         object: {
-          name: 'Lichess Username',
+          name: 'Trained Model',
         } 
       };
     },
@@ -59,7 +68,8 @@ export default {
   },
   components: {
             'dropdown': dropdown,
-            'chessboard': chessboard
+            'chessboard': chessboard,
+            'newboard': compete
   },
   methods: {
       onLogoutClicked() {
@@ -70,15 +80,42 @@ export default {
       },
       toTrain(){
         this.$f7.views.main.router.navigate('/home/');
+        this.$root.ComputerColor = "black";
+        this.$root.bot = "";
+        this.$root.fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
+        this.gameStarted = false;
       },
       toWatch(){
         this.$f7.views.main.router.navigate('/watch/');
+        this.$root.ComputerColor = "black";
+        this.$root.bot = "";
+        this.$root.fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
+        this.gameStarted = false;
       },
       showInfo(data) {
       this.positionInfo = data
       },
       loadFen(fen) {
         this.currentFen = fen
+      },
+      startGame(){
+        if(this.$root.bot==''){
+          this.$f7.dialog.alert('Please select a bot before playing.');
+        } else {
+          this.gameStarted = true;
+        }
+      },
+      isChecked(event){
+        const self = this;
+        if (event.target.checked){
+          self.color="white";
+          this.$root.ComputerColor="black";
+          this.$root.humanColor="white";
+        } else {
+          self.color="black";
+          this.$root.ComputerColor="white";
+          this.$root.humanColor="black";
+        }
       },
       promote() {
         if (confirm("Want to promote to rook? Queen by default") ) {
@@ -89,12 +126,8 @@ export default {
       },
       selectMethod(payload){
         this.object.name = payload.username;
+        this.$root.bot = payload.username;
       },
-  },
-  created() {
-    this.fens = ['5rr1/3nqpk1/p3p2p/Pp1pP1pP/2pP1PN1/2P1Q3/2P3P1/R4RK1 b - f3 0 28',
-                'r4rk1/pp1b3p/6p1/8/3NpP2/1P4P1/P2K3P/R6R w - - 0 22'
-                ]
   }
 
 }
