@@ -23,6 +23,7 @@ Normally, as a data scientist, I only work on the back-end developing the desire
 I learned how to use Vue in conjunction with Flask, Firebase, and Firestore, and, truthfully, I learned that I prefer working on the back-end development of an app - that being said, by trying and learning new things I got to experience the sheer joy of toiling with a problem and solving it, which, while I can experience on the back-end, the time spent toiling and thus the corresponding joy by solving the problem is lesser.
 
 ## What's next for Copy Chess?
+[ Copy Chess is currenlty being developed in a Private Repository for the Microsoft Azure Hackathon ]
 * I intend to rework the model design including both more contextual information (centipawn-differential between moves, most frequently missed tactics - built using a tactics classifier, etc)
 * Fully flesh out the training queue (so you can select only models that have been trained) and perhaps create a restriction on the number of models a user can train
     * Also, implement the option to train on the players a given player loses to rather than the player itself
